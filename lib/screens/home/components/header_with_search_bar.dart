@@ -62,13 +62,18 @@ class HeaderWithSearchBar extends StatelessWidget {
               ),
               child: TextField(
                 decoration: InputDecoration(
-                    hintText: searchBarHint,
-                    hintStyle: TextStyle(
-                      color: customPrimaryColor.withOpacity(0.5),
-                    ),
-                    enabledBorder: InputBorder.none,
-                    focusedBorder: InputBorder.none,
-                    suffixIcon: const Icon(Icons.search)),
+                  hintText: searchBarHint,
+                  hintStyle: TextStyle(
+                    fontSize: 20,
+                    color: customPrimaryColor.withOpacity(0.5),
+                  ),
+                  enabledBorder: InputBorder.none,
+                  focusedBorder: InputBorder.none,
+                  suffixIcon: const Icon(
+                    Icons.search,
+                    color: customPrimaryColor,
+                  ),
+                ),
               ),
             ),
           ),
