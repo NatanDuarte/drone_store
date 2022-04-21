@@ -30,7 +30,7 @@ class HeaderWithSearchBar extends StatelessWidget {
             child: Row(
               children: [
                 Text(
-                  leadingText,
+                  Strings.leadingText,
                   style: Theme.of(context).textTheme.headline5?.copyWith(
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
@@ -62,7 +62,7 @@ class HeaderWithSearchBar extends StatelessWidget {
               ),
               child: TextField(
                 decoration: InputDecoration(
-                  hintText: searchBarHint,
+                  hintText: Strings.searchBarHint,
                   hintStyle: TextStyle(
                     fontSize: 20,
                     color: customPrimaryColor.withOpacity(0.5),
