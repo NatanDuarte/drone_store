@@ -1,4 +1,6 @@
 import 'package:drone_store/screens/home/components/header_with_search_bar.dart';
+import 'package:drone_store/screens/home/components/recommended_drone_card.dart';
+import 'package:drone_store/screens/home/components/recommended_drones.dart';
 import 'package:drone_store/screens/home/components/title_with_button.dart';
 import 'package:drone_store/strings.dart';
 import 'package:flutter/material.dart';
@@ -13,10 +15,8 @@ class Body extends StatelessWidget {
       child: Column(
         children: [
           HeaderWithSearchBar(size: _size),
-          TitleWithMoreButton(
-            title: Strings.recommended,
-            onPressed: () {},
-          ),
+          TitleWithMoreButton(title: Strings.recommended, onPressed: () {}),
+          const RecommendedDrones(),
         ],
       ),
     );
