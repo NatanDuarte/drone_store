@@ -4,4 +4,5 @@ class Strings {
   static const leadingText = 'Your new Drone is here!';
   static const recommended = 'Recommended';
   static const more = 'More';
+  static const featuredDrones = 'Featured drones';
 }
