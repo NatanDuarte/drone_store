@@ -1,5 +1,6 @@
+import 'package:drone_store/constants.dart';
+import 'package:drone_store/screens/home/components/featured_drones.dart';
 import 'package:drone_store/screens/home/components/header_with_search_bar.dart';
-import 'package:drone_store/screens/home/components/recommended_drone_card.dart';
 import 'package:drone_store/screens/home/components/recommended_drones.dart';
 import 'package:drone_store/screens/home/components/title_with_button.dart';
 import 'package:drone_store/strings.dart';
@@ -17,6 +18,9 @@ class Body extends StatelessWidget {
           HeaderWithSearchBar(size: _size),
           TitleWithMoreButton(title: Strings.recommended, onPressed: () {}),
           const RecommendedDrones(),
+          TitleWithMoreButton(title: Strings.featuredDrones, onPressed: () {}),
+          const FeaturedDrones(),
+          const SizedBox(height: customDefaultPadding),
         ],
       ),
     );
