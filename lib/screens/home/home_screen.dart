@@ -1,4 +1,5 @@
 import 'package:drone_store/screens/home/components/body.dart';
+import 'package:drone_store/screens/home/components/custom_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -9,6 +10,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(),
       body: const Body(),
+      bottomNavigationBar: const CustomBottomNavigationBar(),
     );
   }
 
